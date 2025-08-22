@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeeba Kalburgi - Portfolio</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="logo">Adeeba N Kalburgi</div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1><b>Hi, I'm Adeeba </b></h1>
+    <p>Computer Science Engineering Student | Full-Stack Learner </p>
+    <a href="Adeeba_Kalburgi_Resume.pdf" download class="btn">Download Resume</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+    <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        As a Computer Science undergraduate, passionate about Frontend technologies, Full Stack Development and Software solutions. I am driven by curiosity and a constant desire to learn. 
+        I thrive in problem-solving environments, enjoy working on projects that challenge my skills, and look forward to contributing to teams where innovation and impact are at the forefront.
+      
+      </p>
+    </div>
+  </section>
+
+
+  <section id="projects">
+  <h2>Project</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>SareeKart</h3>
+      <p>An e-commerce and feature-rich platform focuses on sustainability and community welfare. Implemented user login, registration, add-to-cart, admin panel, and payment gateway.</p>
+      <p><strong>Tech stack:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+      <p><strong>Tools:</strong> VS Code, XAMPP</p>
+      <!-- GitHub Link -->
+      <p>
+        <a href="https://github.com/AdeebaKalburgi/SareeKart_e-commerce_multi-featured_project" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none;">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Technical Skills</h3>
+        <p>Python, HTML, CSS, JavaScript, MySQL</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>VS Code, XAMPP, Github, Jupyter Notebook, Spyder</p>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <p>English, Hindi, Kannada</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Bachelor of Engineering, Computer Science</h3>
+        <p>Basaveshwar Engineering College, Bagalkote (2022 - 2026)</p>
+        <p>CGPA: 8.34</p>
+      </div>
+      <div class="card">
+        <h3>Pre-University - PCMB</h3>
+        <p>S.K Rathi Science PU College, Guledgudd (2020 - 2022)</p>
+        <p>Percentage: 96.5%</p>
+      </div>
+      <div class="card">
+        <h3>High School - CBSE</h3>
+        <p>Nehru International Public School, Guledgudd (2019 - 2020)</p>
+        <p>Percentage: 83.86%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+  <h2>Activities & Certifications</h2>
+  <div class="grid">
+    <!-- Achievements Card -->
+    <div class="card">
+      <h3>Activities</h3>
+      <ul>
+        <li>Winner - "InnovateX" 8-Hour College-Level Hackathon</li>
+        <li>Volunteer - "Wave 2.0" 24-Hour National-Level Hackathon</li>
+        <li>Participant - "Avishkaar-2025" A College-Level Project Exibition and Competition</li>
+        <li>Participant - "Techignite" A College-Level Technical Event</li>
+        <li>Participnat - "Venatus" 2-Days College-Level Technical-Fest</li>
+      </ul>
+    </div>
+
+    <!-- Certifications Card -->
+    <div class="card">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Databases and SQL for Data Science with Python - IBM via Coursera (2025)</li>
+        <li>Python Foundation Certification - Infosys Springboard (2025)</li>
+        <li>Introduction to Artificial Intelligence - Infosys Springboard (2024)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact section without boxes -->
+  <!-- Contact section without boxes -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:kalburgiadeeba@gmail.com">kalburgiadeeba@gmail.com</a></p>
+  <p><i class="fa-solid fa-phone"></i>Phone: <a href="tel:+918904021973">+91 8904021973</a></p>
+  <p><i class="fa-solid fa-location-dot"></i>Location: Bagwan Peth, Ward no 05, Guledgudd 587-203</p>
+  <p><i class="fa-brands fa-linkedin"></i>LinkedIn: <a href="https://linkedin.com/in/adeeba-n-kalburgi-b2237b332" target="_blank">linkedin.com/in/adeeba-n-kalburgi</a></p>
+  <p><i class="fa-brands fa-github"></i>GitHub: <a href="https://github.com/adeebakalburgi" target="_blank">github.com/adeebakalburgi</a></p>
+</section>
+
+
+  <footer>
+    © <span id="year"></span> Adeeba N Kalburgi. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+:root {
+  --primary: #1565c0;   /* Deep Blue */
+  --secondary: #263238; /* Blue-Grey */
+  --accent: #42a5f5;    /* Light Blue highlight */
+  --light: #ffffff;     /* White cards */
+  --bg: #f4f6f8;        /* Light grey background */
+  --text: #2c3e50;      /* Dark blue-grey text */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--light);
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+header nav a, header nav .btn-download {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text);
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: var(--accent);
+}
+
+/* BUTTONS */
+.btn-download {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0.5rem;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: var(--secondary);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 4rem 0rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card h3 {
+  margin-top: 0;
+  color: var(--secondary);
+}
+
+/* CONTACT */
+#contact p {
+  text-align: center;
+  font-size: 1.05rem;
+  margin: 0.8rem 0;
+}
+#contact i {
+  color: var(--accent);
+  margin-right: 8px;
+}
+#contact a {
+  color: var(--primary);
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: var(--secondary);
+  margin-top: 3rem;
+}
