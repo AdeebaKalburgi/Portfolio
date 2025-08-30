@@ -18,6 +18,8 @@
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
+      <!-- 🌙 Light/Dark Toggle Button -->
+    <button id="theme-toggle" class="btn-theme"><i class="fa-solid fa-moon"></i></button>
       
     </nav>
   </header>
@@ -157,9 +159,24 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    // Change icon depending on mode
+    if (body.classList.contains("dark")) {
+      toggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+      toggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+  });
+</script>
 </body>
 </html>
+
 
 
 
