@@ -116,6 +116,7 @@ h2 {
   border: 1px solid #e0e0e0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
 }
 .card:hover {
   transform: translateY(-3px);
@@ -153,3 +154,4 @@ footer {
   background: var(--secondary);
   margin-top: 3rem;
 }
+
